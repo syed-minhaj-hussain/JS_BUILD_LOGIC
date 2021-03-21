@@ -23,3 +23,18 @@ const capitalize = (str) => {
    
 }
 // console.log(capitalize('we are neoGrammers'));
+
+// 3) Given an array of numbers, your function should return an array in the ascending order.
+// Example: Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+const sortNumbers = arr => arr.sort((x, y) => x - y);
+console.log(sortNumbers([100,83,32,9,45,61]));
+
+// 4) Given a sentence, your function should reverse the order of characters in each word, keeping same sequence of words.
+// Example: Input: reverseCharactersOfWord('we are neoGrammers') –––> Output: ew era sremmarGoen
+
+const reverseCharactersOfWord = str => {
+    strArray = str.split(' ');
+    strArrayMap = strArray.map(str => str.split('').reverse().join('')).join(' ');
+    return strArrayMap;  
+};
+// console.log(reverseCharactersOfWord('we are neoGrammers'));
